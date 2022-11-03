@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript daily tasks</h1>
+
+<p></p>
+
+
+<script>
+    operation = prompt('input your operation');
+    x = Number(prompt('input x value'));
+    y = Number(prompt('input y value'));
+    var result = 0;
+    if (operation == "+") {
+        result = x+y ;
+        document.write(`x + y = ${result}`)
+        console.log(`x + y = ${result}`)
+    } else if (operation == "-"){
+        result = x-y ;
+        document.write(`x - y = ${result}`)
+        console.log(`x - y = ${result}`)
+    } else if (operation == "*"){
+        result = x*y ;
+        document.write(`x * y = ${result}`)
+        console.log(`x * y = ${result}`)
+    } else if (operation == "/"){
+        result = x/y ;
+        document.write(`x / y = ${result}`)
+        console.log(`x / y = ${result}`)
+    }
+</script>
+
+</body>
+</html>

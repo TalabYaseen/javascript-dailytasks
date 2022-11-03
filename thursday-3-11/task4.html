@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url(./img/4426.jpg);
+                background-size: cover;
+                background-position: center;
+                background-position-y: 25%;
+            }
+            h2 , h1 {
+                text-align: center;
+
+            }
+            h1 {
+                color: #FA3F00;
+            }
+        </style>
+    </head>
+<body>
+
+<h1>JavaScript day1 tasks</h1>
+<h1>task number 4</h1>
+<div>
+    <h2>you entered </h2><h1 id="radius"></h1><h2> as a radios</h2><br><br><br>
+    <h2>so the area of circle with this radios is <h1 id="circle"></h1></h2>
+</div>
+
+
+<script>
+    const π = Math.PI ;
+    radius = Number(prompt("enter the radius for your circle :"))
+    area = π * radius * radius ;
+    circumference = 2 * π * radius ;
+    document.getElementById("radius").innerHTML =radius 
+    
+    document.getElementById("circle").innerHTML =circumference 
+    
+</script>
+
+</body>
+</html>
