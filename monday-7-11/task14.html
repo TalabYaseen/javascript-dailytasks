@@ -1,0 +1,35 @@
+<!-- /*
+14
+Write a function called longerString
+that accept four string as an arguments,
+and return the first longer string
+
+Ex: longerString("air","school","car","github")
+=> school
+
+Ex: longerString("air","schoo","car","github")
+=> github
+
+try all the cases (change the order of the longestString)
+*/ -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day3 tasks</h1>
+    <script>
+function longerString(str1,str2,str3,str4,str5) {
+    if ((str1.length >= str2.length) && (str1.length >= str3.length) && (str1.length >= str4.length))  {
+        return str1
+    } else if ((str2.length >= str1.length) && (str2.length >= str3.length) && (str2.length >= str4.length)){
+        return str2
+    } else if ((str3.length >= str1.length) && (str3.length >= str2.length) && (str3.length >= str4.length)){
+        return str3
+    } else {
+        return str4
+    }
+}
+document.write(longerString("22","11","10dfgdsfgs","kjdthf"))
+    </script>
+
+</body>
+</html>

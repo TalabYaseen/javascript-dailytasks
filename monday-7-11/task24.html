@@ -1,0 +1,56 @@
+<!-- /*
+24
+Write a function called resetCounter
+that will reset the previuos function
+and return the number before reset and
+a string say that the counter reset
+
+Ex: counter()
+=> 1
+
+Ex: counter()
+=> 2
+
+Ex: counter()
+=> 3
+
+Ex: resetCounter()
+=> 3 and the counter reset now
+
+Ex: counter()
+=> 1
+
+Ex: counter()
+=> 2
+
+Ex: resetCounter()
+=> 2 and the counter reset now
+
+Ex: counter()
+=> 1
+*/ -->
+<!DOCTYPE html>
+<html>
+   <body>
+       <h1>JavaScript day3 tasks</h1>
+       <script>
+            var cont = 0;
+            function counter() {
+                cont++
+           return cont
+   }
+   function resetCounter() {
+            document.write(`${cont} and the counter reset now <br>`)
+            cont = 0
+   }
+
+            document.write(counter()+"<br>")
+            document.write(counter()+"<br>")
+            document.write(counter()+"<br>")
+            document.write(counter()+"<br>")
+            resetCounter()
+            document.write(counter()+"<br>")
+       </script>
+   
+   </body>
+   </html>

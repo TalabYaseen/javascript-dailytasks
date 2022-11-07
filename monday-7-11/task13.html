@@ -1,0 +1,48 @@
+<!-- /*
+13
+Write a function called shorterString
+that accept five string as an arguments,
+and return the first shorter string
+
+Ex: shorterString("air","school","car","by","github")
+=> by
+
+Ex: shorterString("air","tr","car","by","github")
+=> tr
+
+Ex: shorterString("by","tr","car","air","github")
+=> by
+
+Ex: shorterString("air","by","car","school","github")
+=> by
+
+Ex: shorterString("air","tr","by","car","github")
+=> by
+
+Ex: shorterString("air","tr","car","github","by")
+=> by
+
+*/ -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day3 tasks</h1>
+    <script>
+function shorterString(str1,str2,str3,str4,str5) {
+    if ((str1.length <= str2.length) && (str1.length <= str3.length) && (str1.length <= str4.length) && (str1.length <= str5.length))  {
+        return str1
+    } else if ((str2.length <= str1.length) && (str2.length <= str3.length) && (str2.length <= str4.length) && (str2.length <= str5.length)){
+        return str2
+    } else if ((str3.length <= str1.length) && (str3.length <= str2.length) && (str3.length <= str4.length) && (str3.length <= str5.length)){
+        return str3
+    } else if ((str4.lengh <= str1.length) && (str4.length <= str2.length) && (str4.length <= str3.length) && (str4.length <= str5.length)){
+        return str3
+    } else {
+        return str5
+    }
+}
+document.write(shorterString("22","11","10","kjdthf","g"))
+    </script>
+
+</body>
+</html>

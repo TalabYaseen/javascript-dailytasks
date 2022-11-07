@@ -1,0 +1,44 @@
+<!-- /*
+22
+Write a function called scoreInUniversty
+that takes 1 parameters
+and returns the alpabet in the unevirsty
+A => 95-100
+B => 85-94
+C => 70-84
+D=> 50-69
+F=> 0-49
+
+Ex: scoreInUniversty(96)
+=> "A"
+
+Ex: scoreInUniversty(3)
+=> "F"
+
+Ex: scoreInUniversty(71)
+=> "C"
+*/ -->
+<!DOCTYPE html>
+<html>
+   <body>
+       <h1>JavaScript day3 tasks</h1>
+       <script>
+            function scoreInUniversty(grade) {
+                if (grade >= 95) {
+                    return "A"
+                } else if (grade >= 85) {
+                    return "B"
+                } else if (grade >= 70) {
+                    return "C"
+                } else if (grade >= 50) {
+                    return "D"
+                } else {
+                    return "F"
+                }
+                
+   }
+   document.write(scoreInUniversty(60))
+       </script>
+   
+   </body>
+   </html>

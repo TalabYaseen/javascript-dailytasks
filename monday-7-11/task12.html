@@ -1,0 +1,38 @@
+<!-- /*
+12
+Write a function called smallerNubmer
+that accept three numbers as arguments,
+and return the first smaller number
+
+Ex: smallerNubmer(8,6,7)
+=> 6
+
+Ex: smallerNubmer(5,99,34)
+=> 5
+
+Ex: smallerNubmer(5,99,3)
+=> 3
+
+Ex: smallerNubmer(5,3,3)
+=> 3
+
+*/ -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day3 tasks</h1>
+    <script>
+function smallerNubmer(n1,n2,n3) {
+    if ((n1 <= n2) && (n1 <= n3)) {
+        return n1
+    } else if ((n2 <= n1) && (n2 <= n3)){
+        return n2
+    } else {
+        return n3
+    }
+}
+document.write(smallerNubmer(22,11,1))
+    </script>
+
+</body>
+</html>

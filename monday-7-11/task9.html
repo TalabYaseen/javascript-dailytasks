@@ -1,0 +1,36 @@
+<!-- /*
+9
+Write a function called canIGetADrivingLicense that:
+accept 1 parameter represent the age
+and if the age greater than or equal to 20 return "yes you can"
+otherwise return "please come back after X years to get one"
+
+Ex: canIGetADrivingLicense(21)
+=> "yes you can"
+
+Ex: canIGetADrivingLicense(17)
+=> "please come back after 3 years to get one"
+
+Ex: canIGetADrivingLicense(20)
+=> "yes you can"
+
+*/ -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day3 tasks</h1>
+    <script>
+function canIGetADrivingLicense(age) {
+    nn = 20-age;
+    if (age >= 20) {
+        return "yes you can"
+    } else {
+        return `please come back after ${nn} years to get one`
+    }
+}
+document.write(canIGetADrivingLicense(19))
+
+    </script>
+
+</body>
+</html>
