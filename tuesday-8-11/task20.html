@@ -1,0 +1,48 @@
+<!-- /*
+20
+Create a function called evenIndexOddLength
+that accept an array of strings
+and return a new array that have the string with odd length in even index
+
+var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+Ex: evenIndexOddLength(strings) => ["madrasa"]
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/ -->
+
+<!DOCTYPE html>
+<html>
+   <body>
+       <h1>JavaScript day4 tasks</h1>
+       <script>
+   function evenIndexOddLength(arr) {
+           for (i=0;i<arr.length;) {
+            if ((arr[i].length) % 2 == 0) {
+                arr.splice(i,1)
+            } else {
+                i++
+            }
+           }
+           return arr
+   }
+   function evenIndexOddLength2(arr) {
+            i=0;
+           while (i<arr.length) {
+            if ((arr[i].length) % 2 == 0) {
+                arr.splice(i,1)
+            } else {
+                i++
+            }
+           }
+           return arr
+   }
+   var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+   document.write(evenIndexOddLength(strings)+"<br>")
+   document.write(evenIndexOddLength2(strings)+"<br>")
+
+
+   </script>
+   
+   </body>
+   </html>

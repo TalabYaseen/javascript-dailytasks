@@ -1,0 +1,45 @@
+<!-- /*
+18
+Create a function called shorterInArray
+that accept an array of strings
+and return the shortest string inside this array (first)
+
+var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+Ex: shorterInArray(strings) => "alex"
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/ -->
+<!DOCTYPE html>
+<html>
+   <body>
+       <h1>JavaScript day4 tasks</h1>
+       <script>
+   function shorterInArray(arr) {
+        result = arr[0];
+        for (i=1;i<arr.length;i++) {
+            if (result.length > arr[i].length) {
+                result = arr[i];
+            }
+        }
+           return (result)
+   }
+   function shorterInArray2(arr) {
+        result = arr[0];
+        i=1;
+        while (i<arr.length) {
+            if (result.length > arr[i].length) {
+                result = arr[i];
+                
+            }
+            i = i +1
+        }
+        return (result)
+   }
+   var animals = ['cat', 'ele', 'bird','k']
+   document.write(shorterInArray(animals) + "<br>")
+   document.write(shorterInArray2(animals))
+       </script>
+   
+   </body>
+   </html>

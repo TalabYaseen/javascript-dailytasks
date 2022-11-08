@@ -1,0 +1,41 @@
+<!-- /*
+13
+Create a function called sumArray
+that accept an array
+and return the summation of all elemnt in this array
+
+var nums= [1,2,3,8,9]
+Ex: sumArray(nums) => 23
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/ -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day4 tasks</h1>
+    <script>
+function sumArray(arr) {
+    sum = 0
+    for (i=0; i<arr.length ;i++) {
+        sum = sum + arr[i]
+    }
+    return(sum)
+}
+function sumArray2(arr) {
+    sum = 0
+    i = 0;
+    while (i<arr.length) {
+        sum = sum + arr[i];
+        i++
+    }
+    return(sum)
+}
+nums= [1,2,3,8,9]
+document.write(sumArray(nums))
+document.write(sumArray2(nums))
+
+    </script>
+
+</body>
+</html>

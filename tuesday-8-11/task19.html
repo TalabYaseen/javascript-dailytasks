@@ -1,0 +1,45 @@
+<!-- /*
+19
+Create a function called repeatChar
+that accept a string and char
+and return the times that this char repeat inside this string
+
+var string= "alex mercer madrasa rashed2 emad hala"
+Ex: repeatChar(string,"a") => 6
+Ex: repeatChar(string,"z") => 0
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/ -->
+<!DOCTYPE html>
+<html>
+   <body>
+       <h1>JavaScript day4 tasks</h1>
+       <script>
+   function repeatChar(str,char) {
+        rep = 0;
+        for (i=0;i<str.length;i++) {
+            if (char == str[i]) {
+                rep++;
+            }
+        }
+        return rep;
+   }
+   function repeatChar2(str,char) {
+        rep = 0;
+        i=0;
+        while (i<str.length) {
+            if (char == str[i]) {
+                rep++;
+            }
+            i++;
+        }
+        return rep
+   }
+   name = "talab hasan yaseen"
+   document.write(repeatChar(name,'e')+"<br>")
+   document.write(repeatChar2(name,'a'))
+       </script>
+   
+   </body>
+   </html>

@@ -1,0 +1,30 @@
+<!-- /*
+8
+Create a function called middleOfArray
+that take an array as a parameter
+and return the middle element in an array if it is have an odd elemnets
+and return the two middle elemnt in an array if it is have an even elemnets
+
+Ex: middleOfArray([1,4,5]) => 4
+Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
+*/
+
+
+/* -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript day4 tasks</h1>
+    <script>
+function middleOfArray(arr) {
+    if (arr.length % 2 == 0) {
+        return arr[(arr.length/2 -1)] + ',' +(arr[(arr.length/2 )])
+    } else {
+      return arr[(arr.length/2 -.5)]
+    }}
+    array = [0,5,7,9,8]
+    document.write(middleOfArray(array))
+    </script>
+
+</body>
+</html>
