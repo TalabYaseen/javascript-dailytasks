@@ -1,0 +1,46 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <style>
+            #pic {
+                width: 10em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h1">JavaScript day5 tasks</h1>
+        <select id="hh" onchange="myFunction()" value="gg">
+            <option class="contry" value="non">non</option>
+            <option class="contry" value="jordan">jordan</option>
+            <option class="contry" value="eygbt">eygbt</option>
+            <option class="contry" value="saudi">saudi</option>
+            <option class="contry" value="syria">syria</option>
+        </select>
+        <img id="pic" src="" alt="non">
+        <script>
+            sel = document.getElementById("hh")
+            pic = document.getElementById("pic")
+                function myFunction(){
+                switch (sel.value) {
+                    case "eygbt" :
+                    pic.setAttribute("src", "./Flag_of_Egypt.svg.png");
+                    break;
+                    case "jordan" :
+                    pic.setAttribute("src", "./Flag_of_Jordan.svg.png");
+                    break;
+                    case "saudi" :
+                    pic.setAttribute("src", "./Flag_of_Saudi_Arabia_(1938–1973).svg.png");
+                    break;
+                    case "syria" :
+                    pic.setAttribute("src", "./Flag-Syria.jpg");
+                    break;
+                    default:
+                    pic.setAttribute("src", "");
+
+                }
+                console.log(sel.value)
+            }
+        </script>
+
+    </body>
+</html>

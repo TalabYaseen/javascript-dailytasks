@@ -1,0 +1,50 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <style>
+            .main {
+                width: 50%;
+                box-sizing: border-box;
+                border: solid 1px black;
+            }
+            #title{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(201, 209, 215);
+                padding: 0em 2em ;
+                align-items: center;
+            }
+            #detail {
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript day5 tasks</h1>
+        <div class="main">
+            <div id="title">
+                <h2>WHY DO WE USE IT ??</h2>
+                <p id="show">show</p>
+            </div>
+            <div id="detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt adipisci quam praesentium ipsum accusamus debitis amet iure iusto, reiciendis laudantium voluptates magni enim, at nostrum, nisi consectetur. Error, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt adipisci quam praesentium ipsum accusamus debitis amet iure iusto, reiciendis laudantium voluptates magni enim, at nostrum, nisi consectetur. Error, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt adipisci quam praesentium ipsum accusamus debitis amet iure iusto, reiciendis laudantium voluptates magni enim, at nostrum, nisi consectetur. Error, quisquam.
+            <p id="hide">hide</p>
+            </div>
+        </div>
+        <script>
+            show = document.getElementById("show");
+            show.addEventListener("click", show_fun)
+            function show_fun(){
+                document.getElementById("detail").style.display = "initial";
+                show.style.display = "none";
+            }
+            hide = document.getElementById("hide");
+            hide.addEventListener("click", hide_fun)
+            function hide_fun(){
+                document.getElementById("detail").style.display = "none";
+                show.style.display = "initial";
+            }
+        </script>
+
+    </body>
+</html> 

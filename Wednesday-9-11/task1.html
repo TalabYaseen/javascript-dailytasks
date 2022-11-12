@@ -1,0 +1,55 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <style>
+            h2 {
+                width: 40%;
+                padding: 1em 0em;
+                border: solid 2px black;
+                background-color: yellow;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript day5 tasks</h1>
+        <h2 id="fbox">Hallo world !!</h2><br><br><br><br>
+        <h2 id="sbox">TALAB YASEEN!!</h2>
+        <script>
+            fbox = document.getElementById('fbox')
+            sbox = document.getElementById('sbox')
+            fbox.onmouseover=function () {
+                fbox.style.backgroundColor = 'red';
+            }
+            fbox.onmouseout=function () {
+                fbox.style.backgroundColor = 'yellow';
+            }
+            sbox = document.getElementById('sbox')
+            setInterval(myTimer, 500);
+            function myTimer() {
+                // console.log(Math.random)
+                coloroptions = ['red','blue','white','green']
+                random1 = Math.random() *(coloroptions.length)
+                sbox.style.backgroundColor=coloroptions[parseInt(random1)]
+                
+                
+                // i1 = math.random()*256
+                // i1 = i1 - (i1%1)
+                // i2 = math.random()*256
+                // i2 = i2 - (i2%1)
+                // i3 = math.random()*256
+                // i3 = i3 - (i3%1)
+
+                // randomColor = "#"+(i1).toString(16)+(i2).toString(   )+(i3).toString(16);
+                // randomColor = `rgb(${i1},${i2},${i3})`  
+                //  
+                // const randomColor = "#"+Math.floor(Math.random()*7824256).toString(16);
+                // sbox.style.backgroundColor = randomColor;
+            }
+
+            
+
+        </script>
+
+    </body>
+</html>

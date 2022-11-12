@@ -1,0 +1,87 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <style>
+
+            div {
+                width: 500px;
+                padding: 10px;
+                border: solid 2px black;
+                font-family: Arial;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript day5 tasks</h1>
+        <select id="hh" onchange="font_style()" value="">
+            <option value="Arial">Arial</option>
+            <option value="Lucida Sans">Lucida Sans</option>
+            <option value="Impact">Impact</option>
+        </select>
+            <input type="number" id="rangenumber" min="0" max="30" value="15" onchange="font_size()">
+            <label >Italic</label>
+            <input type="checkbox" id= "Italic" onclick="Italic_check()">
+            <label >Bold</label>
+            <input type="checkbox" id= "Bold" onclick="Bold_check()">
+            <label >Underline</label>
+            <input type="checkbox" id= "Underline" onclick="Underline_check()">
+            <div id="div1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quos tempora blanditiis nesciunt, debitis laudantium a tenetur neque atque distinctio. Earum ipsam ab officia esse veniam quisquam, excepturi quis.
+            </div>
+        <script>
+            div1 = document.getElementById("div1")
+            font_choice = document.getElementById("hh");
+            function font_style(){
+                switch (hh.value) {
+                    case "Arial" :
+                    div1.style.fontFamily = "Arial";  
+                    break;
+                    case "Lucida Sans" :
+                    div1.style.fontFamily = "Lucida Sans";
+                    break;
+                    case "Impact" :
+                    div1.style.fontFamily = "Impact"; 
+                    break;}
+                    console.log(hh.value)
+                }
+            rangenumber = document.getElementById("rangenumber");
+            function font_size() {
+                console.log()
+                div1.style.fontSize = rangenumber.value ;
+            }
+            let Italic = document.getElementById("Italic");
+            function Italic_check() {
+                console.log(Italic.checked)
+                if (Italic.checked) {
+                    div1.style.fontStyle = "italic";
+                }
+                if (!Italic.checked) {
+                    div1.style.fontStyle = "normal";
+                }
+            }
+            Bold = document.getElementById("Bold");
+            function Bold_check(){
+                console.log(Bold.checked)
+                if (Bold.checked) {
+                    div1.style.fontWeight = "bolder";
+                }
+             else {
+                    div1.style.fontWeight = "normal";
+                }
+                
+            }
+           let Underline = document.getElementById("Underline")
+            function Underline_check(){
+                if (Underline.checked) {
+                    div1.style.textDecoration = "underline";
+                }
+                if (!Underline.checked) {
+                    div1.style.textDecoration = "none";
+                }
+                
+            }
+        </script>
+
+    </body>
+</html> 
